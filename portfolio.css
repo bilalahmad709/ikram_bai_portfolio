@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(19, 19, 47);
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+.nav-item .nav-link{
+    color: white;
+    font-size: 20px;
+    /* padding: 20px; */
+    /* margin-left: 30px; */
+}
+.logo h2{
+    color:white;
+    font-size: 30px;
+}
+.hamburger{
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+.intro{
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+.intro h1 span{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.intro h2 span{
+    color: aqua;
+    font-weight: 800;
+}
+
+.profile_div{
+    justify-content: center;
+    text-align: center;
+}
+.profile_div .profile{
+    margin: 30px;
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+}
+.reach_me{
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 2px;
+   
+}
+.reach_me img{
+    width: 40px;
+    background-color: rgb(207, 209, 212);
+    margin-right: 20px;
+    border: 2px solid blue;
+    border-radius: 15px;
+}
+.reach_me img:hover{
+    background-color: rgb(239, 84, 27);
+    width: 50px;
+    box-shadow: 2px 2px 15px blue;
+}
+
+/* media querry portion */
+@media  screen and (max-width:780px){
+    .profile_div{
+        order: 1;
+        width:100%
+    }
+    .profile_div img.profile{
+        height: 250px;
+        width: 200px;
+        border: 2px solid blue;
+        border-radius: 40%;
+    }
+    .intro{
+        order: 2;
+    }
+}
+
+
+/* css for the about page */
+.about-container{
+    text-align: center;
+    padding: auto;
+    
+}
+.about-container .about{
+    margin: 20px;
+    padding: 30px;
+    margin-top:30px;
+    border: 2px solid rgb(25, 25, 68);
+}
+.about-container .about:hover{
+    box-shadow: 2px 2px 20px blue;
+    font-size: 20px;
+}
+.about h2 span{
+    color: aqua;
+}
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 5px;
+}
+.pagination a{
+    color: white;
+    text-decoration: none;
+    border: 3px solid gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.pagination a:hover{
+    box-shadow: 2px 2px 10px blue;
+}
