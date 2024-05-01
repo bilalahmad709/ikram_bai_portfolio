@@ -2,7 +2,12 @@ body{
     background-color: rgb(19, 19, 47);
     color: white;
     font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
+html {
+    overflow-x: hidden; 
+  }
 .nav-item .nav-link{
     color: white;
     font-size: 20px;
@@ -17,6 +22,9 @@ body{
     color: white;
     border: 2px solid white;
     border-radius: 30px;
+}
+.container{
+    width: 100%;
 }
 .intro{
     align-items: start;
@@ -46,16 +54,21 @@ body{
     border-radius: 15px;
 }
 .reach_me{
+    display: flex;
+    justify-content: center;
     margin: auto;
     margin-top: 30px;
-    padding: 10px;
-    padding-left: 2px;
+    padding: 20px;
    
 }
-.reach_me img{
+.reach_me a{
+    margin: 5px 8px;
+}
+.reach_me a img{
     width: 40px;
+    height: 35px;
     background-color: rgb(207, 209, 212);
-    margin-right: 20px;
+    margin-right: 2px;
     border: 2px solid blue;
     border-radius: 15px;
 }
@@ -79,6 +92,7 @@ body{
     }
     .intro{
         order: 2;
+        padding-left: 30px;
     }
 }
 
@@ -195,10 +209,21 @@ body{
 }
 
 /* contact page css */
+
+.contact-container h2{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-container h2 span{
+    color: aqua;
+}
 .contacts{
     border-radius: 5px;
     margin: 5px;
-    padding: 8px;
+    padding: 50px;
     box-shadow: 2px 2px 20px blue;
 }
 .contact{
@@ -206,11 +231,23 @@ body{
    margin-right: 20px;
 }
 .contact img{
+    background-color: gray;
+    padding: 5px;
+    border-radius: 10px;
     width: 30px;
     height: 30px;
-    margin-right: 10px;
-    margin: 2px;
+    margin: 10px;
 }
-.contact img p , a{
-    padding: 30px;
+.contact img:hover{
+background-color: orangered;
+width: 40px;
+height: 40px
+}
+.contact p {
+    margin: 15px;
+    margin-top: 15px;
+}
+.contact a{
+    margin: 10px;
+    color: white;
 }
